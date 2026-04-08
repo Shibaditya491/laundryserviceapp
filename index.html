@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry-Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo"><h2>logo</h2></div>
+                <ul class="nav-links">
+                        <li><a href="#heroSection">Home</a></li>
+                        <li><a href="#ServiceCart">Services</a></li>
+                        <li><a href="#features">About</a></li>
+                        <li><a href="#subscription">Contact Us</a></li>
+                </ul>
+                <a class="nav-btn" href="#subscription">Username</a>
+            </div>
+
+            <div id="heroSection" class="hero-section">
+                <div class="left">
+                    <div class="hero-text">
+                        <h1 class="hero-heading">Revitalize your clothes with <span class="heading-span">Laundry Services!</span></h1>
+                        <p class="hero-para">From premium dry cleaning to swift wash and fold, we deliver care nd covenience.Schedule a pickup and rediscover the freshness of your clothes today!</p>
+                        <a href="#ServiceCart" class="hero-btn">Book Your service today</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img class="hero-image" src="https://i.pinimg.com/1200x/46/b6/01/46b6012dff943ea12025bc5b9da28d5d.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="achiements" class="achievements container">
+        <div class="achievement-text">
+            <h2>Our Achievements</h2>
+            <div class="achievement-features">
+                <h3>15+</h3>
+                <p>Laundry Servives</p>
+            </div>
+            <div class="achievement-features">
+                <h3>240+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="achievement-features">
+                <h3>2+ Yrs</h3>
+                <p>Experience</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="ServiceCart" class="Cart container">
+            <div class="Box-cart cart1">
+            <div class="services">
+                <h2>Our Services</h2>
+                <p>Click on the add button to services on the cart</p>
+                <hr>
+                <div class="servicelist">
+                    <div class="service">
+                        <p><span id="service1">👕 Dry Cleaning</span> - <span class="prices">&#x20B9 <span id="price1">200.00</span></span></p>
+                        <div class="buttons">
+                            <button class="btn-add" id="btn1">(+) Add Item</button>
+                            <button class="btn-remove hide" id="btn2">(-) Remove Item</button>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <p><span id="service2">👔 Wash and Fold</span> - <span class="prices">&#x20B9 <span id="price2">100.00</span></span></p>
+                        <div class="buttons">
+                            <button class="btn-add" id="btn3">(+) Add Item</button>
+                            <button class="btn-remove hide" id="btn4">(-) Remove Item</button>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <p><span id="service3">🥌 Ironing</span> - <span class="prices">&#x20B9 <span id="price3">30.00</span></span></p>
+                        <div class="buttons">
+                            <button class="btn-add" id="btn5">(+) Add Item</button>
+                            <button class="btn-remove hide" id="btn6">(-) Remove Item</button>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <p><span id="service4">🩸 Stain Removal</span> - <span class="prices">&#x20B9 <span id="price4">500.00</span></span></p>
+                        <div class="buttons">
+                            <button class="btn-add" id="btn7">(+) Add Item</button>
+                            <button class="btn-remove hide" id="btn8">(-) Remove Item</button>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <p><span id="service5">🎒 Leather and suede cleaning</span>  - <span class="prices">&#x20B9 <span id="price5">999.00</span></span></p>
+                        <div class="buttons">
+                            <button class="btn-add" id="btn9">(+) Add Item</button>
+                            <button class="btn-remove hide" id="btn10">(-) Remove Item</button>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <p><span id="service6">👘 Wedding Dress Cleaning</span> - <span class="prices">&#x20B9 <span id="price6">2800.00</span></span></p>
+                        <div class="buttons">
+                            <button class="btn-add" id="btn11">(+) Add Item</button>
+                            <button class="btn-remove hide" id="btn12">(-) Remove Item</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="service-end">
+                    <p>⨀ Add items to the cart and book now</p>
+                </div>
+            </div>
+            </div>
+            <div class="Box-cart cart2">
+            <div class="added-items">
+                <div class="cart">
+                    <div class="cartheading"><h2>Added Items</h2></div>
+                </div>
+                <div class="items-head">
+                    <p>S.No</p>
+                    <p>Service Name</p>
+                    <p>Price</p>
+                </div>
+                <div id="cart-items" class="items">
+                </div>
+                <hr>
+                <div class="total">
+                <h3>total - <span>&#x20B9</span><span id="total-price"></span></h3>
+                </div>
+            </div>
+            <div class="Book-now">
+                <div class="Booknow-head">
+                    <h2>Book Now</h2>
+                </div>
+                <div class="Book-now-form">
+                    <div class="one">
+                        <label for="Username">FullName:</label>
+                        <input type="text" id="Username" class="input" required>
+                    </div>
+
+                    <div class="two">
+                        <div class="two-one">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="input" required>
+                        </div>  
+
+                        <div class="two-two">    
+                            <label for="phone">Phone Number</label>
+                            <input type="tel"  id="phone" class="input">
+                        </div>
+                    </div>
+
+                    <button id="Book-now" class="Book-now-btn" onclick="handleClick1()">Book-now</button>
+                    <p id="msgBooknow" class="msg-booknow"> ⨀ Add items to the cart and Book now</p>
+
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section container">
+            <div class="features">
+            <div class="one-feature">
+                <img class="feature-img" src="https://cdn-icons-png.flaticon.com/128/3003/3003800.png" alt="img" width="120px">
+                <h3 class="feature-heading">Premium Services</h3>
+                <p class="feature-para">Elevate your wardrope with our meticulous dry cleaning. Ensurin garments look and feel as good as new</p>
+            </div>
+            <div class="two-feature">
+                <img class="feature-img" src="https://cdn-icons-png.flaticon.com/128/9723/9723160.png" alt="image" width="120px">
+                <h3 class="feature-heading">Quick Support</h3>
+                <p class="feature-para">we are confirmed to providing you a support solutions to ensure your experience is smooth and worry-free</p>
+            </div>
+            <div class="three-features">
+                <img class="feature-img" src="https://cdn-icons-png.flaticon.com/512/4601/4601580.png" alt="image" width="120px">
+                <h3 class="feature-heading">Hassle Free Delivery</h3>
+                <p class="feature-para">Enjoy seamless service with our coveniient pickup and delivery options tailored to your schedule</p>
+            </div>
+            <div class="four-features">
+                <img class="feature-img" src="https://cdn-icons-png.flaticon.com/128/11094/11094629.png" alt="image" width="120px">
+                <h3 class="feature-heading">Affordable Prices</h3>
+                <p class="feature-para">Experience exceptional care without breaking the bank - Our affordable prices make laundry day stress free</p>
+            </div>
+            </div>
+        </section>
+
+        <section id="subscription" class="container subscribe-section">
+            <div class="subscribe-box">
+                <div class="subscribeMsg">
+                    <h2>Subscribe to our news letter.</h2>
+                </div>
+                <div class="subscribeform">
+                    <input type="text" placeholder="Full name" id="subscribename">
+                    <input type="email" placeholder="Email" id="subscribemail">
+                    <button onclick="handleClick2()">Subscribe</button>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer>
+        <div class="footer-section container">
+            <div class="foot-one">
+                <h2>Logo</h2>
+                <h3>About us</h3>
+                <p>
+                    we are here to elevate your wardrope with our meticulous dry cleaning. Ensurin garments look and feel as good as new
+                </p>
+            </div>
+
+            <div class="foot-two">
+                <h3>Important Links</h3>
+                <ul>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Privacy policy</li>
+                    <li>Terms of use</li>
+                    <li>Refund Policy</li>
+                </ul>
+            </div>
+
+            <div class="foot-three">
+                <h3>Contact</h3>
+                <ul>
+                    <li>mail@site.com</li>
+                    <li>+91 91234 56780</li>
+                </ul>
+            </div>
+
+            <div class="foot-four">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="instagram" width="20px"></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968973.png" alt="facebook" width="20px"></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/739/739257.png" alt="twitter" width="20px"></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/1384/1384086.png" alt="Youtube" width="20px"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
